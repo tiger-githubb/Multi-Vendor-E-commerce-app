@@ -29,3 +29,6 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+// admin dashboard route without admin group
+Route::get('admin/dashboard','App\Http\controllers\Admin\AdminController@dashboard');
